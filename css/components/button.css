@@ -1,0 +1,118 @@
+.btn{
+    
+    display:inline-flex;
+    
+    align-items:center;
+    
+    justify-content:center;
+    
+    gap:9px;
+    
+    min-height:46px;
+    
+    padding:0 18px;
+    
+    border-radius:12px;
+    
+    font-weight:800;
+    
+    font-size:.93rem;
+    
+    transition:transform var(--transition),
+    
+    box-shadow var(--transition),
+    
+    background var(--transition),
+    
+    border-color var(--transition);
+    
+    white-space:nowrap
+
+}
+
+.btn:hover{
+    
+    transform:translateY(-2px)
+
+}
+.btn-primary{
+    
+    background:var(--primary);
+    
+    color:#fff;
+    
+    box-shadow:0 8px 20px rgba(37,99,235,.22)
+
+}
+
+.btn-primary:hover,
+
+.btn-primary:focus-visible{
+    
+    background:var(--primary-dark)
+
+}
+
+.btn-secondary{background:#fff;
+    
+    color:var(--ink);
+    
+    border:1px solid var(--line)
+
+}
+
+.btn-secondary:hover,
+
+.btn-secondary:focus-visible{
+    
+    border-color:#bfdbfe;
+    
+    color:var(--primary)
+
+}
+
+
+.btn-soft{
+    
+    background:var(--primary-soft);
+    
+    color:var(--primary)
+
+}
+
+.btn-danger{
+    
+    background:#fef2f2;
+    
+    color:var(--danger)
+
+}
+
+.btn-block{
+    
+    width:100%
+
+}
+
+.btn-lg{
+    
+    min-height:54px;
+    
+    padding-inline:22px
+}
+
+.btn:focus-visible,
+
+.nav-icon:focus-visible,
+
+.input:focus-visible,
+
+.select:focus-visible,
+
+.textarea:focus-visible{
+    
+    outline:3px solid rgba(37,99,235,.18);
+    
+    outline-offset:2px
+
+}

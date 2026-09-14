@@ -1,0 +1,244 @@
+.checkout-layout{
+    
+    display:grid;
+    
+    grid-template-columns:1.2fr .8fr;
+    
+    gap:30px
+
+}
+
+.checkout-panel{
+    
+    padding:26px
+
+}
+
+.form-section+.form-section{
+    
+    margin-top:34px
+
+}
+
+.form-section h2{
+    
+    font-size:1.1rem;
+    
+    margin-bottom:18px
+
+}
+
+.form-grid{
+    
+    display:grid;
+    
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    
+    gap:16px
+
+}
+
+.field{display:flex;
+    
+    flex-direction:column;
+    
+    gap:7px
+
+}
+
+.field.full{
+    
+    grid-column:1/-1
+
+}
+
+.field label{
+    
+    font-size:.83rem;
+    
+    font-weight:800
+
+}
+
+.input,.select,.textarea{
+    
+    width:100%;
+    
+    min-height:46px;
+    
+    border:1px solid var(--line);
+    
+    border-radius:11px;
+    
+    padding:10px 13px;
+    
+    background:#fff;
+    
+    color:var(--ink)
+
+}
+
+.textarea{
+    
+    min-height:105px;
+    
+    resize:vertical
+
+}
+
+.payment-options{
+    
+    display:grid;
+    
+    gap:10px
+
+}
+
+.payment-option{
+    
+    display:flex;
+    
+    align-items:center;
+    
+    gap:10px;
+    
+    padding:13px;
+    
+    border:1px solid var(--line)
+    
+    ;border-radius:11px
+
+}
+
+.payment-option input{
+    
+    accent-color:var(--primary)
+
+}
+
+.order-box{
+    
+    padding:24px;
+    
+    position:sticky;
+    
+    top:95px
+
+}
+
+.order-item{
+    
+    display:flex;
+    
+    justify-content:space-between;
+    
+    
+    gap:14px;
+    
+    padding:11px 0;
+    
+    border-bottom:1px solid var(--line);
+    
+    font-size:.88rem
+
+}
+
+.order-item span:first-child{
+    
+    color:var(--text)
+
+}
+.auth-shell{
+    
+    min-height:calc(100vh - 76px);
+    
+    display:grid;
+    
+    place-items:center;
+    
+    padding:50px 0;
+    
+    background:var(--surface-soft)
+
+}
+
+.auth-card{
+    
+    width:min(100%,440px);
+    
+    padding:30px
+
+}
+
+.auth-card h1{
+   
+    font-size:1.9rem;
+    
+    letter-spacing:-.03em
+
+}
+
+.auth-card>p{
+    
+    color:var(--muted);
+    
+    margin:7px 0 24px
+
+}
+
+.auth-form{display:grid;
+    
+    gap:15px
+
+}
+
+.auth-links{display:flex;
+    justify-content:space-between;
+    
+    gap:12px;
+    
+    margin-top:4px;
+    
+    font-size:.84rem
+
+}
+
+.auth-links a{
+    
+    color:var(--primary);
+    
+    font-weight:700
+
+}
+
+@media (max-width:900px){
+    
+    .checkout-layout{
+        
+        grid-template-columns:1fr
+    
+    }
+    
+    .order-box{
+        
+        position:static
+    
+    }
+
+}
+
+@media (max-width:620px){
+    
+    .form-grid{
+        
+        
+    grid-template-columns:1fr
+
+}
+
+.field.full{
+    
+    grid-column:auto
+}
+
+}
