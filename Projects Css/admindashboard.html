@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link	
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/admindashboard.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">A</div>
+            <span>AdminPro</span>
+        </div>
+
+        <div class="menu-title">MAIN MENU</div>
+
+        <nav class="navigation">
+
+            <a href="#" class="nav-link active">
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <span class="nav-icon">◉</span>
+                <span>Analytics</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <span class="nav-icon">♙</span>
+                <span>Users</span>
+                <span class="nav-count">24</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <span class="nav-icon">▣</span>
+                <span>Products</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <span class="nav-icon">▤</span>
+                <span>Orders</span>
+                <span class="nav-count">8</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <span class="nav-icon">▥</span>
+                <span>Reports</span>
+            </a>
+
+        </nav>
+
+        <div class="menu-title">MANAGEMENT</div>
+
+        <nav class="navigation">
+
+            <a href="#" class="nav-link">
+                <span class="nav-icon">⚙</span>
+                <span>Settings</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <span class="nav-icon">?</span>
+                <span>Help Center</span>
+            </a>
+
+        </nav>
+
+        <!-- Sidebar bottom -->
+
+        <div class="sidebar-bottom">
+
+            <div class="upgrade-box">
+
+                <div class="upgrade-icon">★</div>
+
+                <h4>Upgrade Plan</h4>
+
+                <p>
+                    Get more features and unlimited access.
+                </p>
+
+                <button>
+                    Upgrade Now
+                </button>
+
+            </div>
+
+            <div class="profile">
+
+                <div class="profile-image">
+                    R
+                </div>
+
+                <div class="profile-info">
+                    <strong>Rajat Kumar</strong>
+                    <span>Administrator</span>
+                </div>
+
+                <span class="profile-arrow">⋮</span>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN AREA ================= -->
+
+    <main class="main">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div class="mobile-logo">
+                <div class="logo-icon">A</div>
+                <strong>AdminPro</strong>
+            </div>
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    placeholder="Search anything..."
+                >
+
+              <kbd>Ctrl K</kbd>
+
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="icon-button">
+                    ☀
+                </button>
+
+                <button class="icon-button notification">
+                    ♧
+                    <span></span>
+                </button>
+
+                <div class="top-profile">
+
+                    <div class="profile-image">
+                        R
+                    </div>
+
+                    <div>
+                        <strong>Rajat</strong>
+                        <small>Admin</small>
+                    </div>
+
+                    <span>⌄</span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="content">
+
+            <!-- PAGE HEADER -->
+
+            <div class="page-header">
+
+                <div>
+                    <p class="breadcrumb">
+                        Pages / Dashboard
+                    </p>
+
+                    <h1>Dashboard</h1>
+
+                    <p class="welcome">
+                        Welcome back, Rajat. Here's what's happening today.
+                    </p>
+                </div>
+
+                <div class="header-buttons">
+
+                    <button class="secondary-btn">
+                        ⤓ Export
+                    </button>
+
+                    <button class="primary-btn">
+                        + Add New
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= STAT CARDS ================= -->
+
+            <div class="stats-grid">
+
+                <!-- Card 1 -->
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon revenue">
+                            ₹
+                        </div>
+
+                        <span class="trend positive">
+                            ↑ 12.5%
+                        </span>
+
+                    </div>
+
+                    <p>Total Revenue</p>
+
+                    <h2>₹84,520</h2>
+
+                    <span class="stat-description">
+                        Compared to ₹75,120 last month
+                    </span>
+
+                </div>
+
+
+                <!-- Card 2 -->
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon orders">
+                            #
+                        </div>
+
+                        <span class="trend positive">
+                            ↑ 8.2%
+                        </span>
+
+                    </div>
+
+                    <p>Total Orders</p>
+
+                    <h2>1,248</h2>
+
+                    <span class="stat-description">
+                        94 new orders this week
+                    </span>
+
+                </div>
+
+
+                <!-- Card 3 -->
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon users">
+                            ♙
+                        </div>
+
+                        <span class="trend positive">
+                            ↑ 5.7%
+                        </span>
+
+                    </div>
+
+                    <p>Total Customers</p>
+
+                    <h2>8,642</h2>
+
+                    <span class="stat-description">
+                        324 new customers this month
+                    </span>
+
+                </div>
+
+
+                <!-- Card 4 -->
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon conversion">
+                            %
+                        </div>
+
+                        <span class="trend negative">
+                            ↓ 1.4%
+                        </span>
+
+                    </div>
+
+                    <p>Conversion Rate</p>
+
+                    <h2>4.82%</h2>
+
+                    <span class="stat-description">
+                        Compared to 4.89% last month
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CHART SECTION ================= -->
+
+            <div class="charts-grid">
+
+                <!-- SALES CHART -->
+
+                <div class="card sales-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Sales Overview</h3>
+
+                            <p>
+                                Monthly revenue performance
+                            </p>
+                        </div>
+
+                        <select>
+                            <option>Last 6 Months</option>
+                            <option>Last Year</option>
+                            <option>This Year</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="sales-summary">
+
+                        <div>
+                            <strong>₹84,520</strong>
+                            <span class="positive-text">
+                                +12.5%
+                            </span>
+                        </div>
+
+                        <p>Total revenue generated</p>
+
+                    </div>
+
+
+                    <!-- CSS LINE CHART -->
+
+                    <div class="chart-area">
+
+                        <div class="y-labels">
+                            <span>100K</span>
+                            <span>80K</span>
+                            <span>60K</span>
+                            <span>40K</span>
+                            <span>20K</span>
+                            <span>0</span>
+                        </div>
+
+                        <div class="chart">
+
+                            <div class="grid-lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <svg
+                                class="line-chart"
+                                viewBox="0 0 600 240"
+                                preserveAspectRatio="none"
+                            >
+
+                                <defs>
+
+                                    <linearGradient
+                                        id="areaGradient"
+                                        x1="0"
+                                        y1="0"
+                                        x2="0"
+                                        y2="1"
+                                    >
+
+                                        <stop
+                                            offset="0%"
+                                            stop-opacity=".25"
+                                        />
+
+                                        <stop
+                                            offset="100%"
+                                            stop-opacity="0"
+                                        />
+
+                                    </linearGradient>
+
+                                </defs>
+
+
+                                <path
+                                    class="area"
+                                    d="
+                                    M0,190
+                                    C50,170 70,160 100,165
+                                    C140,170 160,125 200,135
+                                    C240,145 260,105 300,115
+                                    C340,125 350,75 400,90
+                                    C450,105 460,60 500,70
+                                    C540,80 560,40 600,50
+                                    L600,240
+                                    L0,240
+                                    Z
+                                    "
+                                />
+
+                                <path
+                                    class="line"
+                                    d="
+                                    M0,190
+                                    C50,170 70,160 100,165
+                                    C140,170 160,125 200,135
+                                    C240,145 260,105 300,115
+                                    C340,125 350,75 400,90
+                                    C450,105 460,60 500,70
+                                    C540,80 560,40 600,50
+                                    "
+                                />
+
+                            </svg>
+
+
+                            <div class="chart-dots">
+
+                                <span style="left: 0%; top: 79%;"></span>
+
+                                <span style="left: 16%; top: 69%;"></span>
+
+                                <span style="left: 33%; top: 56%;"></span>
+
+                                <span style="left: 50%; top: 48%;"></span>
+
+                                <span style="left: 67%; top: 37%;"></span>
+
+                                <span style="left: 83%; top: 29%;"></span>
+
+                                <span style="left: 100%; top: 21%;"></span>
+
+                            </div>
+
+
+                            <div class="x-labels">
+
+                                <span>Jan</span>
+                                <span>Feb</span>
+                                <span>Mar</span>
+                                <span>Apr</span>
+                                <span>May</span>
+                                <span>Jun</span>
+                                <span>Jul</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PERFORMANCE CARD -->
+
+                <div class="card performance-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Performance</h3>
+
+                            <p>
+                                Sales by category
+                            </p>
+                        </div>
+
+                        <button class="more-btn">
+                            ⋮
+                        </button>
+
+                    </div>
+
+
+                    <div class="donut-wrapper">
+
+                        <div class="donut-chart">
+
+                            <div class="donut-center">
+                                <strong>84%</strong>
+                                <span>Growth</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="legend">
+
+                        <div>
+                            <span class="legend-dot one"></span>
+                            <p>Electronics</p>
+                            <strong>42%</strong>
+                        </div>
+
+                        <div>
+                            <span class="legend-dot two"></span>
+                            <p>Fashion</p>
+                            <strong>28%</strong>
+                        </div>
+
+                        <div>
+                            <span class="legend-dot three"></span>
+                            <p>Home</p>
+                            <strong>18%</strong>
+                        </div>
+
+                        <div>
+                            <span class="legend-dot four"></span>
+                            <p>Others</p>
+                            <strong>12%</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= LOWER GRID ================= -->
+
+            <div class="lower-grid">
+
+
+                <!-- RECENT ORDERS -->
+
+                <div class="card orders-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Recent Orders</h3>
+
+                            <p>
+                                Latest transactions
+                            </p>
+                        </div>
+
+                        <a href="#" class="view-link">
+                            View All →
+                        </a>
+
+                    </div>
+
+
+                    <div class="table-wrapper">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+                                    <th>Customer</th>
+                                    <th>Product</th>
+                                    <th>Order ID</th>
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>
+
+                                        <div class="customer">
+
+                                            <div class="avatar avatar-one">
+                                                AK
+                                            </div>
+
+                                            <div>
+                                                <strong>Arjun Kumar</strong>
+                                                <span>arjun@email.com</span>
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>MacBook Pro</td>
+
+                                    <td>#ORD-10245</td>
+
+                                    <td>₹1,24,999</td>
+
+                                    <td>Sep 04, 2026</td>
+
+                                    <td>
+                                        <span class="status completed">
+                                            Completed
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+
+                                        <div class="customer">
+
+                                            <div class="avatar avatar-two">
+                                                PS
+                                            </div>
+
+                                            <div>
+                                                <strong>Priya Sharma</strong>
+                                                <span>priya@email.com</span>
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>iPhone 16</td>
+
+                                    <td>#ORD-10244</td>
+
+                                    <td>₹79,999</td>
+
+                                    <td>Sep 03, 2026</td>
+
+                                    <td>
+                                        <span class="status pending">
+                                            Pending
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+
+                                        <div class="customer">
+
+                                            <div class="avatar avatar-three">
+                                                RS
+                                            </div>
+
+                                            <div>
+                                                <strong>Rahul Singh</strong>
+                                                <span>rahul@email.com</span>
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>Gaming Monitor</td>
+
+                                    <td>#ORD-10243</td>
+
+                                    <td>₹42,500</td>
+
+                                    <td>Sep 03, 2026</td>
+
+                                    <td>
+                                        <span class="status completed">
+                                            Completed
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+
+                                        <div class="customer">
+
+                                            <div class="avatar avatar-four">
+                                                NS
+                                            </div>
+
+                                            <div>
+                                                <strong>Neha Singh</strong>
+                                                <span>neha@email.com</span>
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>Wireless Headphones</td>
+
+                                    <td>#ORD-10242</td>
+
+                                    <td>₹12,999</td>
+
+                                    <td>Sep 02, 2026</td>
+
+                                    <td>
+                                        <span class="status cancelled">
+                                            Cancelled
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ACTIVITY -->
+
+                <div class="card activity-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Recent Activity</h3>
+
+                            <p>
+                                Latest updates
+                            </p>
+                        </div>
+
+                        <button class="more-btn">
+                            ⋮
+                        </button>
+
+                    </div>
+
+
+                    <div class="activity-list">
+
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon">
+                                ✓
+                            </div>
+
+                            <div>
+                                <strong>
+                                    New order received
+                                </strong>
+
+                                <p>
+                                    Order #ORD-10245 was placed
+                                </p>
+
+                                <small>
+                                    5 minutes ago
+                                </small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon">
+                                +
+                            </div>
+
+                            <div>
+                                <strong>
+                                    New customer registered
+                                </strong>
+
+                                <p>
+                                    Priya Sharma joined the platform
+                                </p>
+
+                                <small>
+                                    32 minutes ago
+                                </small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon">
+                                ₹
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Payment received
+                                </strong>
+
+                                <p>
+                                    ₹42,500 payment confirmed
+                                </p>
+
+                                <small>
+                                    1 hour ago
+                                </small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon">
+                                ↑
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Product updated
+                                </strong>
+
+                                <p>
+                                    Gaming Monitor stock updated
+                                </p>
+
+                                <small>
+                                    2 hours ago
+                                </small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= QUICK STATS ================= -->
+
+            <div class="quick-section">
+
+                <div class="quick-title">
+                    <h3>Quick Insights</h3>
+                    <span>Updated just now</span>
+                </div>
+
+
+                <div class="insights-grid">
+
+                    <div class="insight-card">
+
+                        <div class="insight-icon">
+                            ↗
+                        </div>
+
+                        <div>
+                            <span>Average Order Value</span>
+                            <strong>₹2,845</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="insight-card">
+
+                        <div class="insight-icon">
+                            ♙
+                        </div>
+
+                        <div>
+                            <span>Active Users</span>
+                            <strong>2,486</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="insight-card">
+
+                        <div class="insight-icon">
+                            ★
+                        </div>
+
+                        <div>
+                            <span>Customer Rating</span>
+                            <strong>4.8 / 5</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="insight-card">
+
+                        <div class="insight-icon">
+                            %
+                        </div>
+
+                        <div>
+                            <span>Profit Margin</span>
+                            <strong>32.6%</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                © 2026 AdminPro. All rights reserved.
+            </p>
+
+            <div>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Support</a>
+            </div>
+
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>

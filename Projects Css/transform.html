@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skills Transition</title>
+
+    <style>
+* {
+    background:rgb(231, 233, 236);
+}
+        .container {
+            margin: 100px;
+        }
+
+        .skill {
+            width: 300px;
+            height: 60px;
+            margin: 20px;
+            border-radius: 50px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 35px;
+            font-weight: bold;
+
+            transition: transform 4s ease;
+        }
+
+        
+        .container:hover .skill {
+            transform: translateX(1000px);
+        }
+
+        
+        .html {
+            background-color: orange;
+            transition-delay: 0s;
+        }
+
+    
+        .css {
+            background-color: lightblue;
+            transition-delay: 0.3s;
+        }
+
+        
+        .javascript {
+            background-color: yellow;
+            transition-delay: 0.6s;
+        }
+
+        
+        .sql {
+            background-color: lightgreen;
+            transition-delay: 0.9s;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="skill html">HTML</div>
+
+        <div class="skill css">CSS</div>
+
+        <div class="skill javascript">JavaScript</div>
+
+        <div class="skill sql">SQL</div>
+
+    </div>
+
+</body>
+</html>

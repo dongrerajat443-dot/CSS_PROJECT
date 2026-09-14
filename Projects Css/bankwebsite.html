@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CardSphere - responsive credit card practice website built with HTML and CSS only.">
+  <title>CardSphere | Smart Credit Cards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bankwebsite.css">
+</head>
+<body>
+
+  <div class="top-strip">
+    <div class="container top-strip-inner">
+      <span>Personal</span>
+      <span>Business</span>
+      <span>Support</span>
+      <span class="top-strip-right">24x7 Helpdesk • +91 1800 000 000</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+
+      <a href="#home" class="brand" aria-label="CardSphere home">
+        <span class="brand-mark">C</span>
+        <span class="brand-text">Card<span>Sphere</span></span>
+      </a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-button" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#cards">Credit Cards</a>
+        <a href="#services">Services</a>
+        <a href="#offers">Offers</a>
+        <a href="#rewards">Rewards</a>
+        <a href="#help">Help</a>
+        <a href="#login" class="login-link">Login</a>
+        <a href="#apply" class="btn btn-primary nav-cta">Apply Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="hero-orb hero-orb-one"></div>
+      <div class="hero-orb hero-orb-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">SMART SPENDING • SMART REWARDS</p>
+          <h1>One card.<br><span>More possibilities.</span></h1>
+          <p class="hero-text">
+            Discover a modern credit card experience designed for everyday payments,
+            travel, shopping and rewarding moments.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#apply" class="btn btn-light">Explore Cards</a>
+            <a href="#compare" class="text-link">Compare cards <span>→</span></a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>20L+</strong>
+              <span>Happy members</span>
+            </div>
+            <div>
+              <strong>150+</strong>
+              <span>Reward partners</span>
+            </div>
+            <div>
+              <strong>24×7</strong>
+              <span>Digital support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="float-card float-card-small">
+            <span class="chip tiny-chip"></span>
+            <strong>₹12,500</strong>
+            <small>Available rewards</small>
+          </div>
+
+          <div class="credit-card">
+            <div class="card-top">
+              <span class="card-brand">CardSphere</span>
+              <span class="contactless">⌁</span>
+            </div>
+            <div class="chip"></div>
+            <div class="card-number">5427&nbsp;&nbsp; 8210&nbsp;&nbsp; 3491&nbsp;&nbsp; 7824</div>
+            <div class="card-bottom">
+              <div>
+                <small>MEMBER</small>
+                <strong>RAJ MALHOTRA</strong>
+              </div>
+              <div>
+                <small>VALID THRU</small>
+                <strong>09/31</strong>
+              </div>
+              <div class="visa">VISA</div>
+            </div>
+          </div>
+
+          <div class="float-card cashback-float">
+            <div class="mini-icon">↗</div>
+            <div>
+              <strong>₹1,840</strong>
+              <small>Cashback earned</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-wave"></div>
+    </section>
+
+    <section class="quick-actions">
+      <div class="container quick-grid">
+        <a href="#apply" class="quick-item">
+          <span class="quick-icon">✦</span>
+          <div><strong>Apply for a card</strong><small>Get started online</small></div>
+        </a>
+        <a href="#compare" class="quick-item">
+          <span class="quick-icon">⇄</span>
+          <div><strong>Compare cards</strong><small>Choose what fits you</small></div>
+        </a>
+        <a href="#payment" class="quick-item">
+          <span class="quick-icon">₹</span>
+          <div><strong>Pay your dues</strong><small>Fast & secure payments</small></div>
+        </a>
+        <a href="#help" class="quick-item">
+          <span class="quick-icon">?</span>
+          <div><strong>Need help?</strong><small>Find answers quickly</small></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="cards">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow blue">EXPLORE YOUR OPTIONS</p>
+            <h2>Find a card made for you</h2>
+          </div>
+          <a href="#all-cards" class="text-link dark-link">View all cards →</a>
+        </div>
+
+        <div class="card-category-grid">
+          <a href="#premium" class="category-card">
+            <div class="category-art purple-art">
+              <span class="art-ring"></span>
+              <span class="art-shape"></span>
+            </div>
+            <div class="category-content">
+              <h3>Premium Cards</h3>
+              <p>Luxury benefits, elevated privileges and travel perks.</p>
+              <span>Explore →</span>
+            </div>
+          </a>
+
+          <a href="#cashback" class="category-card">
+            <div class="category-art orange-art">
+              <span class="art-ring"></span>
+              <span class="art-shape"></span>
+            </div>
+            <div class="category-content">
+              <h3>Cashback Cards</h3>
+              <p>Turn everyday shopping into instant value.</p>
+              <span>Explore →</span>
+            </div>
+          </a>
+
+          <a href="#travel" class="category-card">
+            <div class="category-art blue-art">
+              <span class="art-ring"></span>
+              <span class="art-shape"></span>
+            </div>
+            <div class="category-content">
+              <h3>Travel Cards</h3>
+              <p>Rewards and benefits built for your next journey.</p>
+              <span>Explore →</span>
+            </div>
+          </a>
+
+          <a href="#rewards" class="category-card">
+            <div class="category-art green-art">
+              <span class="art-ring"></span>
+              <span class="art-shape"></span>
+            </div>
+            <div class="category-content">
+              <h3>Rewards Cards</h3>
+              <p>Earn more points on the things you love.</p>
+              <span>Explore →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="services">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow blue">EVERYTHING IN ONE PLACE</p>
+          <h2>Services designed around you</h2>
+          <p>Manage your card, payments and rewards with simple digital tools.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card featured-service">
+            <div class="service-icon">₹</div>
+            <h3>Easy EMI</h3>
+            <p>Convert eligible purchases into comfortable monthly instalments.</p>
+            <a href="#emi">Learn more →</a>
+            <div class="service-visual">
+              <div class="bar bar-a"></div>
+              <div class="bar bar-b"></div>
+              <div class="bar bar-c"></div>
+              <div class="bar bar-d"></div>
+              <span class="trend-line"></span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">↗</div>
+            <h3>Quick Payments</h3>
+            <p>Pay bills using convenient digital payment modes.</p>
+            <a href="#payment">View options →</a>
+            <div class="service-dots"><i></i><i></i><i></i><i></i></div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">◉</div>
+            <h3>Card Security</h3>
+            <p>Controls and alerts to help keep your card activity protected.</p>
+            <a href="#security">Stay secure →</a>
+            <div class="shield-mini">✓</div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">★</div>
+            <h3>Reward Points</h3>
+            <p>Track, redeem and enjoy rewards from your purchases.</p>
+            <a href="#rewards">See rewards →</a>
+            <div class="points-bubble">+520</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section offers-section" id="offers">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow blue">LATEST DEALS</p>
+            <h2>Offers worth checking out</h2>
+          </div>
+          <a href="#all-offers" class="text-link dark-link">All offers →</a>
+        </div>
+
+        <div class="offer-grid">
+          <article class="offer-card offer-one">
+            <div class="offer-tag">SHOPPING</div>
+            <h3>Save more<br>on essentials</h3>
+            <p>Extra value on selected online shopping partners.</p>
+            <a href="#offer1">View offer →</a>
+          </article>
+
+          <article class="offer-card offer-two">
+            <div class="offer-tag">TRAVEL</div>
+            <h3>Make your<br>journey rewarding</h3>
+            <p>Unlock special travel privileges with eligible cards.</p>
+            <a href="#offer2">View offer →</a>
+          </article>
+
+          <article class="offer-card offer-three">
+            <div class="offer-tag">DINING</div>
+            <h3>Good food.<br>Better savings.</h3>
+            <p>Discover dining benefits and partner discounts.</p>
+            <a href="#offer3">View offer →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rewards-section" id="rewards">
+      <div class="container rewards-wrap">
+        <div class="rewards-illustration">
+          <div class="reward-orb"></div>
+          <div class="reward-box">
+            <span>★</span>
+            <strong>25,000</strong>
+            <small>POINTS</small>
+          </div>
+          <div class="reward-floating rf-one">+120</div>
+          <div class="reward-floating rf-two">+500</div>
+          <div class="reward-floating rf-three">+80</div>
+        </div>
+
+        <div class="rewards-copy">
+          <p class="eyebrow blue">THE MORE YOU USE, THE MORE YOU EARN</p>
+          <h2>Rewards that feel rewarding</h2>
+          <p>
+            Collect points on eligible spends and choose how you want to use them.
+            From shopping vouchers to travel experiences, your points open up more possibilities.
+          </p>
+
+          <div class="reward-points">
+            <div>
+              <strong>2X</strong>
+              <span>bonus points on selected categories</span>
+            </div>
+            <div>
+              <strong>500+</strong>
+              <span>redeemable reward options</span>
+            </div>
+          </div>
+
+          <a href="#catalogue" class="btn btn-primary">Explore rewards</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compare-section" id="compare">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow blue">COMPARE BEFORE YOU CHOOSE</p>
+          <h2>Popular cards at a glance</h2>
+          <p>Use this sample table to practice responsive comparison layouts.</p>
+        </div>
+
+        <div class="compare-table-wrap">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Card</th>
+                <th>Joining Fee</th>
+                <th>Reward Rate</th>
+                <th>Best For</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>CardSphere Prime</strong></td>
+                <td>₹999</td>
+                <td>5X</td>
+                <td>Travel & Lifestyle</td>
+                <td><a href="#apply">Apply</a></td>
+              </tr>
+              <tr>
+                <td><strong>CardSphere Cash+</strong></td>
+                <td>₹499</td>
+                <td>5% cashback</td>
+                <td>Everyday spends</td>
+                <td><a href="#apply">Apply</a></td>
+              </tr>
+              <tr>
+                <td><strong>CardSphere Go</strong></td>
+                <td>₹0</td>
+                <td>2X</td>
+                <td>First-time users</td>
+                <td><a href="#apply">Apply</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section apply-section" id="apply">
+      <div class="container apply-box">
+        <div>
+          <p class="eyebrow">READY WHEN YOU ARE</p>
+          <h2>Choose a card that keeps up with you.</h2>
+          <p>No JavaScript required in this practice project—everything here is built with semantic HTML and CSS.</p>
+        </div>
+        <a href="#application-form" class="btn btn-light">Start application →</a>
+      </div>
+    </section>
+
+    <section class="section login-section" id="login">
+      <div class="container login-grid">
+        <div>
+          <p class="eyebrow blue">CUSTOMER ACCESS</p>
+          <h2>Manage your card online</h2>
+          <p>Practice creating a clean login interface without JavaScript.</p>
+          <div class="login-benefits">
+            <span>✓ View statements</span>
+            <span>✓ Pay card dues</span>
+            <span>✓ Manage PIN</span>
+          </div>
+        </div>
+
+        <form class="login-card" action="#">
+          <h3>Welcome back</h3>
+          <label for="user">Mobile / User ID</label>
+          <input id="user" type="text" placeholder="Enter your ID">
+
+          <label for="pass">Password</label>
+          <input id="pass" type="password" placeholder="Enter password">
+
+          <div class="form-row">
+            <label class="check-label">
+              <input type="checkbox">
+              <span>Remember me</span>
+            </label>
+            <a href="#forgot">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary full-btn">Login</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section newsletter-section" id="help">
+      <div class="container newsletter">
+        <div>
+          <p class="eyebrow blue">STAY IN THE LOOP</p>
+          <h2>Get useful updates in your inbox</h2>
+          <p>Offers, product news and practical card tips.</p>
+        </div>
+        <form class="subscribe-form" action="#">
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" type="email" placeholder="Your email address">
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-about">
+        <a href="#home" class="brand footer-brand">
+          <span class="brand-mark">C</span>
+          <span class="brand-text">Card<span>Sphere</span></span>
+        </a>
+        <p>Practice project inspired by modern financial-service websites. Not affiliated with any bank or card issuer.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Cards</h4>
+        <a href="#premium">Premium cards</a>
+        <a href="#cashback">Cashback cards</a>
+        <a href="#travel">Travel cards</a>
+        <a href="#rewards">Rewards cards</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">EMI</a>
+        <a href="#payment">Payments</a>
+        <a href="#security">Security</a>
+        <a href="#help">Support</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#about">About</a>
+        <a href="#careers">Careers</a>
+        <a href="#contact">Contact</a>
+        <a href="#privacy">Privacy</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 CardSphere Practice Project</span>
+      <div class="socials">
+        <a href="#linkedin">in</a>
+        <a href="#x">x</a>
+        <a href="#instagram">ig</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
